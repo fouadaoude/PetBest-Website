@@ -1,0 +1,218 @@
+:host {
+    display: block;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+     border-radius: 2px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
+    box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
+    background-color: rgb(255, 255, 255);
+    padding: 1.5em;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: Lucida Grande, sans-serif;
+    }
+fieldset {
+    border: 0;
+    padding: 1.5em 1.5em 2em 1.5em;
+    margin: 0 -1.5em 0 -1.5em;
+    }
+
+fieldset[name="personalInfo"] {
+      margin-top: -1.5em;
+      background: whiteSmoke;
+      border-bottom: 1px solid #eee;
+    }
+
+label {
+      font-weight: bold;
+      line-height: 2.5;
+      display: block;
+    }
+
+label[required]::after {
+      content: '*';
+      color: #c00;
+      padding-left: .25em;
+    }
+
+input {
+      width: 100%;
+      padding: .5em .5em;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      -webkit-transition: all .2s;
+      -moz-transition: all .2s;
+      -o-transition: all .2s;
+      transition: all .2s;
+      border: 1px solid ;
+      font-size: 1em;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      font-family: Lucida Grande, sans-serif;
+      display: block;
+    }
+
+input:focus {
+      border-color: #eee;
+      -webkit-box-shadow: 0 0 4px 0 black;
+      -moz-box-shadow: 0 0 4px 0 black;
+      box-shadow: 0 0 4px 0 black;
+      outline: none;
+      -webkit-transition: all .2s;
+      -moz-transition: all .2s;
+      -o-transition: all .2s;
+      transition: all .2s;
+    }
+.cancel-button{
+      font-size: 1em;
+      background: #f2f2f2;
+      border: 1px solid ;
+      padding: .75em .5em;
+      text-align: center;
+      -webkit-border-radius: 2px;
+      -moz-border-radius: 2px;
+      border-radius: 2px;
+      width: inherit;
+      margin: auto;
+}
+a{
+      text-decoration: none;
+      color: black;
+}
+.cancel-button:hover,.cancel-button:focus{
+      background: #292E34;
+      color: white;
+      cursor: pointer;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
+      -moz-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
+      box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
+}
+[id="requestDate"]{
+  width: 25vh;
+}
+[for="requestDate"]{
+  width: 100vh;
+}
+[id="cardNum"] {
+      margin-bottom: 1em;
+    }
+
+[id="cardExp"],[id="cardCVC"],[for="cardExp"],[for="cardCVC"] {
+      float: left;
+      width: 10%;
+    }
+
+[for="cardCVC"],[id="cardCVC"] {
+      margin-left: 1.5em;
+    }
+
+[type="submit"] {
+      font-size: 1em;
+      background: #292E34;
+      border: 1px solid ;
+      padding: .75em .5em;
+      color: #fff;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+      width: 100%;
+      margin: auto;
+    }
+
+[type="submit"]:hover,[type="submit"]:focus {
+      background: #f2f2f2;
+      color: black;
+      cursor: pointer;
+      -webkit-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
+      -moz-box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
+      box-shadow: rgba(0, 0, 0, 0.0980392) 0px 2px 4px, rgba(0, 0, 0, 0.0980392) 0px 0px 3px;
+    }
+/* Add Pet Form CSS */
+[id="species"],[id="pdate"],[for=species],[for="birthdate"]{
+  float: left;
+  width: 10%;
+}
+[id="birthdate"],[for="birthdate"]{
+  margin-left: 1.5em;
+}
+fieldset[name="cardInfo"] [id="species"]{
+  position: relative;
+  top: 9px;
+}
+/* Employee Service Update Form */
+[id="status"],[for="status"]{
+  float: left;
+  width: 10%;
+}
+[id="orderTotal"],[id="paymentTotal"],[for="orderTotal"],[for="paymentTotal"]{
+  float: left;
+  width: 12%;
+}
+[id="orderTotal"],[id="paymentTotal"],[for="paymentTotal"],[for="orderTotal"]{
+  margin-left: 1.5em;
+}
+fieldset[name="cardInfo"] [id="status"]{
+  position: relative;
+  top: 9px;
+}
+/* Service Request Form */
+[id="service"],[for="service"]{
+  width: 20vh;
+}
+fieldset[id="services"]{
+  margin: 0em 0.3em 0em -0.3em;
+  padding: 0em;
+}
+.cat-button{
+  width: 15%;
+  padding: .4em 0em 0.4em 0em;
+  margin: 0;
+}
+@media only screen and (max-width:950px){
+    [id="cardExp"],[id="cardCVC"],[for="cardExp"],[for="cardCVC"] {
+      float: left;
+      width: 20%;
+    }
+    [for="cardCVC"],[id="cardCVC"] {
+      margin-left: 0.5em;
+    }
+    /*Pet Form Mobile CSS */
+    [id="species"],[id="pdate"],[for=species],[for="birthdate"]{
+      width: 100%;
+      }
+    [id="birthdate"],[for="birthdate"]{
+      margin-left: 0;
+    }
+    fieldset[name="cardInfo"] [id="species"]{
+    position: relative;
+    top: 0;
+    }
+    /*Employee Service Update Form Mobile CSS */
+    [id="status"],[for="status"]{
+      float: inherit;
+      width: 30%;
+    }
+    [id="orderTotal"],[id="paymentTotal"],[for="orderTotal"],[for="paymentTotal"]{
+      float: inherit;
+      width: 46%;
+    }
+    [id="orderTotal"],[id="paymentTotal"],[for="paymentTotal"],[for="orderTotal"]{
+      margin-left: 0em;
+    }
+    fieldset[name="cardInfo"] [id="status"]{
+      position: relative;
+      top: 0px;
+    }
+    fieldset[name="cardInfo"]{
+      margin-top: -3em;
+    }
+}
+@media only screen and (max-width:450px){
+input{
+  width: 90%;
+}
+}

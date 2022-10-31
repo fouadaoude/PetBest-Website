@@ -1,0 +1,220 @@
+body, html{
+    height: 100%;
+    margin: 0;
+    color:  #777;
+    font:   400 15px/1.8 "lato", sans-serif;
+}
+
+.bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, .bgimg-5, .bgimg-6 {
+    /*the image used*/
+    position:   relative;
+    opacity:    0.95;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position:    center;
+    background-repeat:      no-repeat;
+    background-size:          cover;
+}
+.bgimg-1{
+    background-image:   url(../images/oops.jpg);
+    min-height:         150%;
+}
+.bgimg-2  {
+    background-image:   url(../images/indexNarrow.jpg);
+    min-height:         50%;
+
+}
+.bgimg-3{
+    background-image:   url(../images/dog2.jpg);
+    min-height:         50%
+}
+.bgimg-4{
+    background-image:   url(../images/cat2.jpg);
+    min-height:         50%;
+}
+.bgimg-5{
+    background-image:   url(../images/index.jpg);
+    min-height:         150%;
+}
+.bgimg-6{
+    background-image:   url(../images/ferret.jpg);
+    min-height:         50%;
+}
+.caption{
+    position: absolute;
+    left:  8%;
+    top: 25%;
+    width:  100%;
+    text-align: -webkit-left;
+    color:  #000;
+}
+.caption span.border{
+    background-color:   #111;
+    color:  #fff;
+    padding:    18px;
+    font-size:  25px;
+    letter-spacing: 10px;
+}
+.form   {font:   400 15px/1.8 "lato", sans-serif;}
+.button {
+  background-color: #292E34;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+
+}
+.button:hover {opacity: 1}
+h3{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font:   20px "Lato", sans-serif;
+    color:  #111;
+}
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px){
+    .bgimg-1, .bgimg-2, .bgimg-3,.bgimg-4, .bgimg-5, .bgimg-6{
+        background-attachment: scroll;
+    }
+}
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #292E34;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar a {
+  float: right;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: #292E34;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #808080;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  opacity:1;
+}
+
+.show {
+  display: block;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+#free{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+#free td, #free th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+#free tr:nth-child(even){background-color: #f2f2f2;}
+
+#free tr:hover {background-color: #ddd;}
+
+#free th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #292E34;
+  color: white;
+}
+.AddEmployeeCard{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+.employeeAdd{
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 4px;
+  border-style: ridge;
+}
+.AddEmployeeCard label, p{
+  text-align: center;
+}
+.AddEmployeeCard > p {
+  margin-bottom: 0;
+}
+.AddEmployeeCard > .moneyUpdate {
+  align-self: center;
+  width: 30%;
+  text-align: center;
+  padding: 10px 10px;
+  border-radius: 4px;
+  border-style: ridge;
+}
+.hidden {
+  display: none;
+}
